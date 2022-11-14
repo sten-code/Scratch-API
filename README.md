@@ -2,6 +2,24 @@
 
 
 ## Example
+
+### Cloud
+```python
+project_id = 748026085
+username = "griffpatch"
+password = "yes"
+
+session = Session(username=username, password=password)
+cloud = self.session.connect_project(project_id)
+
+cloud.set_cloud_variable("Cloud variable name", "123456789")
+
+@project.cloud.emitter.on("set")
+def cloud_set(variable):
+  print(variable.name + " changed to " + variable.value)
+```
+
+User and Project information
 ```python
 from ScratchAPI import User, Project
 
