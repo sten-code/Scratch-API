@@ -5,6 +5,8 @@
 
 ### Cloud
 ```python
+from ScratchAPI import Session
+
 project_id = 748026085
 username = "griffpatch"
 password = "yes"
