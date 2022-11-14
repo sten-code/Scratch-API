@@ -19,7 +19,7 @@ def cloud_set(variable):
   print(variable.name + " changed to " + variable.value)
 ```
 
-User and Project information
+### User and Project information
 ```python
 from ScratchAPI import User, Project
 
